@@ -107,7 +107,7 @@ Backend
 
 Navigate to the project folder and run:
 `npm install`
-`npm `start`
+`npm start`
 
 The frontend will run on:
 `http://localhost:3000`
