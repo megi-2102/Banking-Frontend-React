@@ -18,8 +18,6 @@ The backend will run on:
 
 `http://localhost:8080`
 
----
-
 ### Start the Frontend
 
 Navigate to the frontend project folder and run:
