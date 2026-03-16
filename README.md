@@ -103,14 +103,14 @@ Backend
 - REST API
 ---
 
-## Running the Application
+## Running the Application and Exercises
 
 Navigate to the project folder and run:
-    npm install
-    npm start
+`npm install`
+`npm `start`
 
 The frontend will run on:
-    http://localhost:3000
+`http://localhost:3000`
 
 The backend should be running on:
-    http://localhost:8080
+`http://localhost:8080`
