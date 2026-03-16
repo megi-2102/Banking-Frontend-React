@@ -101,13 +101,16 @@ Backend
 - Spring Boot
 
 - REST API
+---
 
-Tools
+## Running the Application
 
-- Git
+Navigate to the project folder and run:
+    npm install
+    npm start
 
-- GitLab
+The frontend will run on:
+    http://localhost:3000
 
-- Node.js
-
-- Maven
+The backend should be running on:
+    http://localhost:8080
