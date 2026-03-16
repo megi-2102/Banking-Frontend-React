@@ -1,111 +1,113 @@
 # Sprint 5 Assesment and Exercises
 
-Bank Account Application
+## Bank Account Application
 
 The bank-account-application project is a React-based frontend application connected to a Spring Boot REST API backend.
 
 The system allows users to manage customers and bank accounts.
 
-Features
+### Features
 
-Customer management:
+#### Customer management:
 
-View all customers
+- View all customers
 
-Add new customers
+- Add new customers
 
-Update customer information
+- Update customer information
 
-Delete customers
+- Delete customers
 
-Find customers by ID
+- Find customers by ID
 
-Account management:
+#### Account management:
 
-View all accounts
+- View all accounts
 
-Add accounts to customers
+- Add accounts to customers
 
-Update account information
+- Update account information
 
-Delete accounts
+- Delete accounts
 
-Find accounts by ID
+- Find accounts by ID
 
-View accounts by city
+- View accounts by city
 
-Authentication:
+#### Authentication:
 
-User registration
+- User registration
 
-User login
+- User login
 
-Protected routes for authenticated users
+- Protected routes for authenticated users
+---
 
-Exercises
+### Exercises
 
 Each module folder contains a practice exercise focusing on a specific React concept.
 
-Module 2 – Components
+#### Module 2 – Components
 
 Practice creating and structuring React components.
 
-Module 3 – Router Links
+#### Module 3 – Router Links
 
 Implementation of navigation using React Router.
 
-Module 4 – Props
+#### Module 4 – Props
 
 Passing data between components using props.
 
-Module 5 – State
+#### Module 5 – State
 
 Managing component state using React hooks.
 
-Module 6 – Handling User Input
+#### Module 6 – Handling User Input
 
 Working with forms and user input in React.
 
-Module 7 – Path Variables and Navigation
+#### Module 7 – Path Variables and Navigation
 
 Using dynamic routes and URL parameters.
 
-Module 8 – Conditionals
+#### Module 8 – Conditionals
 
 Rendering UI conditionally based on state.
 
-Module 9 – Interacting with an API
+#### Module 9 – Interacting with an API
 
 Making HTTP requests to a backend using Axios.
+---
 
-Technologies Used
+### Technologies Used
 
-Frontend
+- Frontend
 
-React
+- React
 
-React Router
+- React Router
 
-Axios
+- Axios
 
-JavaScript (ES6)
+- JavaScript 
 
-CSS
+- CSS
 
 Backend
 
-Java
+- Java
 
-Spring Boot
+- Spring Boot
 
-REST API
+- REST API
 
 Tools
 
-Git
+- Git
 
-GitLab
+- GitLab
 
-Node.js
+- Node.js
 
-Maven
+- Maven
