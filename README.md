@@ -78,6 +78,7 @@ Rendering UI conditionally based on state.
 #### Module 9 – Interacting with an API
 
 Making HTTP requests to a backend using Axios.
+
 ---
 
 ### Technologies Used
