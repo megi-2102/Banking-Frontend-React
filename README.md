@@ -43,7 +43,7 @@ The system allows users to manage customers and bank accounts.
 - Protected routes for authenticated users
 ---
 
-### Exercises
+## Exercises
 
 Each module folder contains a practice exercise focusing on a specific React concept.
 
@@ -78,6 +78,7 @@ Rendering UI conditionally based on state.
 #### Module 9 – Interacting with an API
 
 Making HTTP requests to a backend using Axios.
+---
 
 ### Technologies Used
 
