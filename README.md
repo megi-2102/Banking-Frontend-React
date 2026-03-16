@@ -81,7 +81,7 @@ Making HTTP requests to a backend using Axios.
 
 ---
 
-### Technologies Used
+## Technologies Used
 
 Frontend
 
