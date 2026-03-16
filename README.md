@@ -82,7 +82,7 @@ Making HTTP requests to a backend using Axios.
 
 ### Technologies Used
 
-- Frontend
+Frontend
 
 - React
 
