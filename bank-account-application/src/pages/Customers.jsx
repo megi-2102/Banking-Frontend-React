@@ -11,6 +11,9 @@ const Customers = () => {
   // State to store error messages
   const [error, setError] = useState('')
 
+  // State to track which customer's accounts are visible
+  const [visibleAccounts, setVisibleAccounts] = useState({})
+
   const api = "http://localhost:8080";
 
   // Function to retrieve all customers from the backend
@@ -45,6 +48,14 @@ const Customers = () => {
       .catch(error => {
         setError("Failed to delete customer.")
       })
+  }
+
+  // Show or hide accounts for a customer
+  const toggleAccounts = (customerId) => {
+    setVisibleAccounts((prev) => ({
+      ...prev,
+      [customerId]: !prev[customerId]
+    }))
   }
 
   return (
@@ -91,18 +102,22 @@ const Customers = () => {
                 <td>{customer.city}</td>
                 <td>{customer.province}</td>
 
-                {/* Display customer accounts */}
+                {/* Display accounts only when button is clicked */}
                 <td>
-                  {customer.accounts && customer.accounts.length > 0 ? (
-                    <div>
-                      {customer.accounts.map((account) => (
-                        <div key={account.accountId}>
-                          {account.type} - #{account.accountId} - Balance: {account.balance}
-                        </div>
-                      ))}
-                    </div>
+                  {visibleAccounts[customer.customerId] ? (
+                    customer.accounts && customer.accounts.length > 0 ? (
+                      <div>
+                        {customer.accounts.map((account) => (
+                          <div key={account.accountId}>
+                            {account.type} - #{account.accountId} - Balance: {account.balance}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      "No accounts"
+                    )
                   ) : (
-                    "No accounts"
+                    "Hidden"
                   )}
                 </td>
 
@@ -114,6 +129,13 @@ const Customers = () => {
                   >
                     Update
                   </Link>
+
+                  <button
+                    className="btn btn-blue"
+                    onClick={() => toggleAccounts(customer.customerId)}
+                  >
+                    {visibleAccounts[customer.customerId] ? "Hide Accounts" : "View Accounts"}
+                  </button>
 
                   <button
                     className="btn btn-red"

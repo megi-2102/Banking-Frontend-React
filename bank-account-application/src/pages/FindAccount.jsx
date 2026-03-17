@@ -23,6 +23,10 @@ const FindAccount = () => {
 
     e.preventDefault() // Prevent page refresh
 
+    if(id < 1)
+      setError("Account id cannot be less than 1")
+
+    else {
     // Send GET request to retrieve account by ID
     axios.get(api + "/api/accounts/" + id)
       .then((response) => {
@@ -34,6 +38,7 @@ const FindAccount = () => {
         setAccount(null) // Clear previous account
         setError("Account not found.") // Show error message
       })
+    }
   }
 
   return (
@@ -47,7 +52,11 @@ const FindAccount = () => {
           type="number"
           placeholder="Enter account ID"
           value={id}
-          onChange={(e) => setId(e.target.value)} // Update ID state
+          onChange={(e) => {
+            setId(e.target.value) // Update ID state
+            setError("")
+            setAccount(null) // Clear previous result
+          }}
           required
         />
 

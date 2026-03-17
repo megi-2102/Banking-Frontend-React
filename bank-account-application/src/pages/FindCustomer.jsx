@@ -19,6 +19,10 @@ const FindCustomer = () => {
   const handleSearch = (e) => {
     e.preventDefault()
 
+    if(id < 1)
+      setError("Customer id cannot be less than 1")
+
+    else {
     // Request customer from backend using axios
     axios.get(api + '/api/customers/' + id)
       .then(response => {
@@ -30,6 +34,7 @@ const FindCustomer = () => {
         setError("Customer not found.")
         console.log("Unable to find customer", error)
       })
+    }
   }
 
   return (
@@ -42,7 +47,10 @@ const FindCustomer = () => {
           type="number"
           placeholder="Enter customer ID"
           value={id}
-          onChange={(e) => setId(e.target.value)}
+          onChange={(e) => {
+            setId(e.target.value) 
+            setError("")
+          }}
           required
         />
 

@@ -24,7 +24,7 @@ const AccountsByCity = () => {
     e.preventDefault() // Prevent page refresh
 
     // Send GET request to retrieve accounts by city
-    axios.get(api + "/api/accounts/city/" + city)
+    axios.get(api + "/api/accounts/city/" + city.toLowerCase())
       .then((response) => {
         setAccounts(response.data) // Save retrieved accounts
         setError("") // Clear previous errors
@@ -47,7 +47,11 @@ const AccountsByCity = () => {
           type="text"
           placeholder="Enter city"
           value={city}
-          onChange={(e) => setCity(e.target.value)} // Update city state
+          onChange={(e) => {
+            setCity(e.target.value) // Update city state
+            setError("")
+            setAccounts([]) // Clear old results while typing
+          }}
           required
         />
 
