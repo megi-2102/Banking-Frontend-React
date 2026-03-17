@@ -47,6 +47,13 @@ useEffect(() => {
 
     const validationErrors = []
 
+    const postalCodeRegex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/
+
+    // Require a valid postcode format
+    if (postalCode !== "" && !postalCodeRegex.test(postalCode.trim())) {
+      validationErrors.push("Postal code must be in valid format, for example T3R 3E3.")
+    }
+
     // Require at least one field to be updated
     if (name === "" && postalCode === "" && city === "" && province === "") {
       validationErrors.push("Please enter at least one field to update.")
@@ -123,7 +130,10 @@ useEffect(() => {
         <input
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+          setName(e.target.value)
+          setErrors([])
+          }}
           placeholder="Leave empty to keep current name"
         />
 
@@ -131,7 +141,10 @@ useEffect(() => {
         <input
           type="text"
           value={postalCode}
-          onChange={(e) => setPostalCode(e.target.value)}
+          onChange={(e) => {
+          setPostalCode(e.target.value)
+          setErrors([])
+          }}
           placeholder="Leave empty to keep current postal code"
         />
 
@@ -139,7 +152,10 @@ useEffect(() => {
         <input
           type="text"
           value={city}
-          onChange={(e) => setCity(e.target.value)}
+          onChange={(e) => {
+          setCity(e.target.value)
+          setErrors([])
+          }}
           placeholder="Leave empty to keep current city"
         />
 
@@ -147,7 +163,10 @@ useEffect(() => {
         <input
           type="text"
           value={province}
-          onChange={(e) => setProvince(e.target.value)}
+          onChange={(e) => {
+          setProvince(e.target.value)
+          setErrors([])
+          }}
           placeholder="Leave empty to keep current province"
         />
         

@@ -31,13 +31,21 @@ const AddCustomer = () => {
       ...prev,
       [name]: value
     }))
+    // Clear error message when user starts typing
+    setError("")
   }
 
   // Submit the form to create a new customer
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.post(api + '/api/customers', customer)
+    // Show error message if postal code has invalid form
+    const postalCodeRegex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/ 
+    if (!postalCodeRegex.test(customer.postalCode.trim())) {
+      setError("Postal code must be in valid format, for example T3R 3E3.")
+    }
+    else {
+      axios.post(api + '/api/customers', customer)
       .then(() => {
 
         // Show success message
@@ -57,6 +65,7 @@ const AddCustomer = () => {
         setError("Failed to create customer.")
         setMessage("")
       })
+    }
   }
 
   return (

@@ -27,14 +27,18 @@ const Register = () => {
       ...prev,
       [name]: value
     }))
+    // Clear errors when typing
+    setErrors([])
   }
 
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
     const validationErrors = []
     setMessage("")
+
 
     // Validate full name
     if (!formData.fullName.trim()) {
@@ -52,8 +56,12 @@ const Register = () => {
     }
 
     // Validate confirm password
-    if (!formData.confirmPassword.trim()) {
-      validationErrors.push("Confirm password is required.")
+    if (!formData.password.trim()) {
+      validationErrors.push("Password is required.")
+    } else if (!passwordRegex.test(formData.password)) {
+      validationErrors.push(
+        "Password must be at least 8 characters and include uppercase, lowercase, a number and a special character."
+      )
     }
 
     // Check if passwords match
