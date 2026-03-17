@@ -1,117 +1,113 @@
-# Sprint 5 Assesment and Exercises
+# 💻 Banking Frontend – React Application
 
-## Bank Account Application
+## 📖 Overview
+This project is a React-based frontend application for managing customers and accounts in a banking system.
 
-The bank-account-application project is a React-based frontend application connected to a Spring Boot REST API backend.
-
-The system allows users to manage customers and bank accounts.
-
-### Features
-
-#### Customer management:
-
-- View all customers
-
-- Add new customers
-
-- Update customer information
-
-- Delete customers
-
-- Find customers by ID
-
-#### Account management:
-
-- View all accounts
-
-- Add accounts to customers
-
-- Update account information
-
-- Delete accounts
-
-- Find accounts by ID
-
-- View accounts by city
-
-#### Authentication:
-
-- User registration
-
-- User login
-
-- Protected routes for authenticated users
----
-
-## Exercises
-
-Each module folder contains a practice exercise focusing on a specific React concept.
-
-#### Module 2 – Components
-
-Practice creating and structuring React components.
-
-#### Module 3 – Router Links
-
-Implementation of navigation using React Router.
-
-#### Module 4 – Props
-
-Passing data between components using props.
-
-#### Module 5 – State
-
-Managing component state using React hooks.
-
-#### Module 6 – Handling User Input
-
-Working with forms and user input in React.
-
-#### Module 7 – Path Variables and Navigation
-
-Using dynamic routes and URL parameters.
-
-#### Module 8 – Conditionals
-
-Rendering UI conditionally based on state.
-
-#### Module 9 – Interacting with an API
-
-Making HTTP requests to a backend using Axios.
+It provides a simple and user-friendly interface that interacts with a backend REST API, allowing users to perform operations such as creating, updating, deleting, and viewing customers and accounts.
 
 ---
 
-## Technologies Used
+## 🚀 Features
 
-Frontend
+### 👤 Customer Management
+- Create new customers  
+- Update customer details  
+- Delete customers  
+- View all customers  
+- Search customers by ID  
 
-- React
-
-- React Router
-
-- Axios
-
-- JavaScript 
-
-- CSS
-
-Backend
-
-- Java
-
-- Spring Boot
-
-- REST API
 ---
 
-## Running the Application and Exercises
+### 💳 Account Management
+- Create savings accounts  
+- Create checking accounts  
+- Update account details  
+- Delete accounts  
+- View all accounts for a customer  
 
-Navigate to the project folder and run:
-`npm install`
-`npm start`
+---
 
-The frontend will run on:
-`http://localhost:3000`
+### 🧭 Navigation & UI
+- Sidebar navigation for easy page transitions  
+- Consistent header across all pages  
+- Clean and simple layout for better user experience  
 
-The backend should be running on:
-`http://localhost:8080`
+---
+
+### ⚠️ Error Handling
+- Displays user-friendly error messages  
+- Handles API request failures gracefully  
+
+---
+
+## 🔗 API Integration
+This frontend consumes a REST API developed using Spring Boot.
+
+Backend project:
+https://github.com/your-username/banking-api-spring-boot
+
+---
+
+## 🛠️ Technologies Used
+- React  
+- JavaScript  
+- HTML  
+- CSS  
+- Axios  
+
+---
+
+## 📂 Project Structure
+```
+src/
+├── components/
+├── pages/
+├── services/
+├── App.js
+└── index.js
+```
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+   git clone https://github.com/megi-2102/banking-frontend-react.git
+   
+2. Install dependencies:
+   npm install
+   
+3. Run the application:
+   npm start
+
+4. Open in browser:
+   http://localhost:3000
+
+---
+
+## 🧠 Key Concepts Demonstrated
+
+- React component-based architecture
+
+- State management
+
+- API integration using Axios
+
+- Form handling
+
+- Error handling and user feedback
+
+- Frontend application structure
+
+---
+
+## 📌 Notes
+
+- Built as part of an FDM training program
+
+- Designed to work with a Spring Boot backend API
+
+---
+
+## 👩‍💻 Author
+
+**Megi Belba**
