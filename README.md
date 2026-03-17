@@ -41,33 +41,6 @@ The system allows users to manage customers and bank accounts.
 - User login
 
 - Protected routes for authenticated users
-
----
-
-## Exercises
-
-Each module folder contains a practice exercise focusing on a specific React concept.
-
-#### Module 2 – Components
-
-Practice creating and structuring React components.
-
-#### Module 3 – Router Links
-
-Implementation of navigation using React Router.
-
-#### Module 4 – Props
-
-Passing data between components using props.
-
-#### Module 5 – State
-
-Managing component state using React hooks.
-
-#### Module 6 – Handling User Input
-
-Working with forms and user input in React.
-
 ---
 
 ## Exercises
@@ -129,7 +102,6 @@ Backend
 - Spring Boot
 
 - REST API
-
 ---
 
 ## Running the Application and Exercises

@@ -4,19 +4,11 @@ This project is a Bank Account Management Application developed as part of the S
 
 The application allows users to manage customers and bank accounts through a web interface built with React, connected to a Spring Boot REST API backend.
 
----
-
 ## Running the Application
 
 ### Start the backend
 
 Run the Spring Boot application:
-
-    `mvn spring-boot:run`
-
-The backend will run on:
-
-    `http://localhost:8080`
 
 - `mvn spring-boot:run`
 
@@ -28,14 +20,6 @@ The backend will run on:
 
 Navigate to the frontend project folder and run:
 
-    `npm install`
-
-    `npm start`
-
-The application will run on:
-
-    `http://localhost:3000`
-
 - `npm install`
 
 - `npm start`
@@ -43,8 +27,6 @@ The application will run on:
 The application will run on:
 
 - `http://localhost:3000`
-
----
 
 ## API Endpoints
 
