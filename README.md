@@ -68,6 +68,32 @@ Managing component state using React hooks.
 
 Working with forms and user input in React.
 
+---
+
+## Exercises
+
+Each module folder contains a practice exercise focusing on a specific React concept.
+
+#### Module 2 – Components
+
+Practice creating and structuring React components.
+
+#### Module 3 – Router Links
+
+Implementation of navigation using React Router.
+
+#### Module 4 – Props
+
+Passing data between components using props.
+
+#### Module 5 – State
+
+Managing component state using React hooks.
+
+#### Module 6 – Handling User Input
+
+Working with forms and user input in React.
+
 #### Module 7 – Path Variables and Navigation
 
 Using dynamic routes and URL parameters.

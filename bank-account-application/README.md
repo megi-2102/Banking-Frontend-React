@@ -18,6 +18,12 @@ The backend will run on:
 
     `http://localhost:8080`
 
+- `mvn spring-boot:run`
+
+The backend will run on:
+
+- `http://localhost:8080`
+
 ### Start the Frontend
 
 Navigate to the frontend project folder and run:
@@ -29,6 +35,14 @@ Navigate to the frontend project folder and run:
 The application will run on:
 
     `http://localhost:3000`
+
+- `npm install`
+
+- `npm start`
+
+The application will run on:
+
+- `http://localhost:3000`
 
 ---
 
