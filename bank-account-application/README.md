@@ -12,12 +12,6 @@ The application allows users to manage customers and bank accounts through a web
 
 Run the Spring Boot application:
 
-    `mvn spring-boot:run`
-
-The backend will run on:
-
-    `http://localhost:8080`
-
 - `mvn spring-boot:run`
 
 The backend will run on:
@@ -27,14 +21,6 @@ The backend will run on:
 ### Start the Frontend
 
 Navigate to the frontend project folder and run:
-
-    `npm install`
-
-    `npm start`
-
-The application will run on:
-
-    `http://localhost:3000`
 
 - `npm install`
 
