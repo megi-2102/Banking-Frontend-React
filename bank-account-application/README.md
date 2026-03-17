@@ -4,8 +4,6 @@ This project is a Bank Account Management Application developed as part of the S
 
 The application allows users to manage customers and bank accounts through a web interface built with React, connected to a Spring Boot REST API backend.
 
----
-
 ## Running the Application
 
 ### Start the backend
@@ -29,8 +27,6 @@ Navigate to the frontend project folder and run:
 The application will run on:
 
 - `http://localhost:3000`
-
----
 
 ## API Endpoints
 
